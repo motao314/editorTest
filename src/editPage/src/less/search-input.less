@@ -1,0 +1,124 @@
+.search-wrap {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  position: relative;
+
+  .box-type-filter {
+    margin-left: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+
+    :deep(.anticon) {
+      color: #9c9c9c;
+      font-size: 22px;
+    }
+  }
+
+  .search-icon {
+    :deep(.anticon) {
+      color: #616161;
+      font-size: 16px;
+    }
+  }
+
+  :deep(.ant-btn-primary, .ant-btn) {
+    box-shadow: none !important;
+    border: none;
+  }
+
+  :deep(.ant-input-group-addon .ant-btn) {
+    border-left-width: 0px !important;
+    background-color: #f7f7f7 !important;
+  }
+
+  :deep(.ant-input-search-button) {
+    // height: 40px;
+    width: 45px;
+    border-radius: 0 8px 8px 0 !important;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+  }
+  :deep(.ant-input-group-addon) {
+    border-radius: 0 8px 8px 0 !important;
+  }
+
+  :deep(.ant-btn.ant-input-search-button:hover) {
+    background-color: #f7f7f7 !important;
+  }
+
+  :deep(.ant-btn.ant-btn-primary:hover),
+  :deep(.ant-input:focus),
+  :deep(.ant-input-focused) {
+    border-color: none !important;
+    box-shadow: none !important;
+    border-right-width: 0px !important;
+    outline: 0 !important;
+  }
+
+  :deep(.ant-btn:hover::after),
+  :deep(.ant-btn:focus::after) {
+    color: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+  }
+
+  :deep(.ant-input-wrapper) {
+    padding: 0px;
+    box-shadow: none;
+    border-right: none;
+  }
+
+  :deep(.ant-input) {
+    background-color: #f7f7f7 !important;
+    padding-left: 10px;
+    height: 42px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid transparent;
+    border-right: none !important;
+
+    & + span {
+      height: 38px;
+      border: 1px solid #f7f7f7 !important;
+      border-left: none !important;
+      background-color: #f7f7f7;
+    }
+  }
+
+  &:hover:deep(.ant-input),
+  :deep(.ant-input:focus) {
+    border-left: 1px solid @primary-color !important;
+    border-top: 1px solid @primary-color !important;
+    border-bottom: 1px solid @primary-color !important;
+
+    & + span {
+      border-color: @primary-color !important;
+
+      .search-icon .anticon {
+        color: @primary-color !important;
+      }
+    }
+  }
+
+  :deep(.ant-input-affix-wrapper) {
+    padding: 0px;
+    box-shadow: none;
+    border: none;
+
+    & + span {
+      border: 1px solid #f7f7f7 !important;
+      border-left: none !important;
+    }
+  }
+
+  &:hover :deep(.ant-input-affix-wrapper),
+  :deep(.ant-input-affix-wrapper-focused) {
+    & + span {
+      border-color: @primary-color !important;
+
+      .search-icon .anticon {
+        color: @primary-color !important;
+      }
+    }
+  }
+}

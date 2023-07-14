@@ -1,0 +1,130 @@
+// @primary-color: #F13848; // 全局主色
+@link-color: #1890ff; // 链接色
+@success-color: #52c41a; // 成功色
+@warning-color: #faad14; // 警告色
+
+@font-size-base: 14px; // 主字号
+@heading-color: rgba(0, 0, 0, 0.85); // 标题色
+@text-color: #333; // 主文本色
+@text-color-secondary: #666666; // 次文本色
+@text-color-thrid: #999999; // 三级次文本色
+@disabled-color: rgba(0, 0, 0, 0.25); // 失效色
+@border-radius-base: 8px; // 组件/浮层圆角
+@border-color-base: #e8e8e8; // 边框色
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影
+
+@bg-color: #f2f3f5; // 灰色背景色
+
+.ant-modal {
+  .ant-modal-content {
+    border-radius: 15px;
+  }
+
+  .ant-modal-header {
+    border-radius: 15px 15px 0 0;
+    border-bottom: none;
+    padding: 30px 40px;
+
+    .ant-modal-title {
+      line-height: 28px;
+      font-size: 20px;
+      color: @text-color;
+    }
+  }
+
+  .ant-modal-close-x {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .ant-modal-body {
+    padding: 0 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 5px #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+::-webkit-scrollbar-track {
+  //  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+* {
+  scrollbar-color: #e5e5e5 #fff;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+// 下面关于主题切换
+
+// sub-menu-item 被选中时的背景色
+@ant-menu-item-selected-bg-color-ele: white;
+@ant-menu-item-selected-bg-color-zhulaoda: #ccbf92;
+
+// sub-menu-item  被选中时的文字色
+@ant-menu-item-selected-font-color-ele: black;
+@ant-menu-item-selected-font-color-zhulaoda: white;
+
+// ant-menu-submenu  被选中时的文字色
+@ant-menu-submenu-selected-font-color-ele: black;
+@ant-menu-submenu-selected-font-color-zhulaoda: #b79f55;
+
+// 主题色
+@primary-color-ele: #f13848;
+@primary-color-zhulaoda: #b79f55;
+
+// 主题色 色块区
+@primary-color-bg-ele: #f13848;
+@primary-color-bg-zhulaoda: #ccbf92;
+
+// 主题色的 hover 效果
+@primary-color-hover-ele: #dc1e2f;
+@primary-color-hover-zhulaoda: #c79e22;
+
+// radio btn hover
+@radio-btn-hover-ele: #fef2f2;
+@radio-btn-hover-zhulaoda: #fbf5ef;
+
+// 报错色
+@error-color-ele: #f5222d;
+@error-color-zhulaoda: #b79f55;
+
+// 按钮不可点击
+@btn-disabled-zhulaoda: #dad1b7;
+@btn-disabled-ele: #ffc6cb;
+
+// radio box 区文字的颜色
+@radio-label-zhulaoda: #cd5922;
+@radio-label-ele: #f13848;
+
+// 编辑器里 label 的底色
+@bg-hover-zhulaoda: #f6f3ec;
+@bg-hover-ele: #fdf3f3;
+
+// 在下面配置主题即可
+@ant-menu-item-selected-bg-color: @ant-menu-item-selected-bg-color-ele;
+@ant-menu-item-selected-font-color: @ant-menu-item-selected-font-color-ele;
+@ant-menu-submenu-selected-font-color: @ant-menu-submenu-selected-font-color-ele;
+@primary-color: @primary-color-ele;
+@primary-color-hover: @primary-color-hover-ele;
+@radio-btn-hover: @radio-btn-hover-ele;
+@error-color: @error-color-ele;
+@btn-disabled: @btn-disabled-ele;
+@radio-label: @radio-label-ele;
+@primary-color-bg: @primary-color-bg-ele;
+@bg-hover: @bg-hover-ele;
