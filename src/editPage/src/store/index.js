@@ -257,19 +257,19 @@ export const useMainStore = defineStore('main', {
       this.getTemplateGategroy();
       console.log('initBaseList GET_USER_INFOS');
       let res = await fetchApi.get(GET_USER_INFOS, {}, { withoutCheck: true });
-      if (res?.flag) {
-        this.userInfos = res.data;
-        this.userId = res.data.id; // 单独设置一下用户ID
-        this.getHistoryColors();
-      } else {
-        console.log('initBaseList GET_USER_INFOS false');
-        localStorage.removeItem('Authorization');
-        localStorage.removeItem('userId');
-        localStorage.removeItem('userName');
-        message.error('会话已过期，请重新登录', 3, () => {
-          location.replace('/login');
-        });
-      }
+      // if (res?.flag) {
+      //   this.userInfos = res.data;
+      //   this.userId = res.data.id; // 单独设置一下用户ID
+      //   this.getHistoryColors();
+      // } else {
+      //   console.log('initBaseList GET_USER_INFOS false');
+      //   localStorage.removeItem('Authorization');
+      //   localStorage.removeItem('userId');
+      //   localStorage.removeItem('userName');
+      //   message.error('会话已过期，请重新登录', 3, () => {
+      //     location.replace('/login');
+      //   });
+      // }
     },
     // 获取热门颜色
     getHotColors() {
